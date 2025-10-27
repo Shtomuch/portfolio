@@ -31,17 +31,17 @@
 
 html[data-theme="light"] {
     --bg-primary: #FFFFFF;
-    --bg-secondary: #F8FAFC;
+    --bg-secondary: #F1F5F9;
     --bg-tertiary: #E2E8F0;
 
-    --text-primary: #0F172A;
-    --text-secondary: #334155;
+    --text-primary: #1E293B;
+    --text-secondary: #475569;
     --text-muted: #64748B;
 
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.1);
-    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.12);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.2);
 }
 
 html[data-theme="light"] body {
@@ -112,6 +112,40 @@ html[data-theme="light"] .form-group textarea {
 html[data-theme="light"] .status-badge {
     background: var(--bg-primary);
     border-color: rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme="light"] .hero-description,
+html[data-theme="light"] .about-text p,
+html[data-theme="light"] .timeline-description,
+html[data-theme="light"] .project-description,
+html[data-theme="light"] .contact-info p {
+    color: var(--text-secondary);
+    opacity: 1;
+}
+
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] h4,
+html[data-theme="light"] .hero-name,
+html[data-theme="light"] .section-title,
+html[data-theme="light"] .timeline-title,
+html[data-theme="light"] .project-title {
+    color: var(--text-primary);
+}
+
+html[data-theme="light"] .nav-link {
+    color: var(--text-secondary);
+}
+
+html[data-theme="light"] .nav-link:hover,
+html[data-theme="light"] .nav-link.active {
+    color: var(--primary);
+}
+
+html[data-theme="light"] .footer {
+    background: var(--bg-secondary);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 section,
