@@ -56,6 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const particles = [];
     const particleCount = 80;
 
+    function getParticleColor() {
+        const theme = document.documentElement.getAttribute('data-theme') || 'dark';
+        return theme === 'light' ? '59, 130, 246' : '59, 130, 246';
+    }
+
     class Particle {
         constructor() {
             this.x = Math.random() * canvas.width;
@@ -75,9 +80,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         draw() {
+            const color = getParticleColor();
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(59, 130, 246, ${this.opacity})`;
+            ctx.fillStyle = `rgba(${color}, ${this.opacity})`;
             ctx.fill();
         }
     }
@@ -99,8 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const distance = Math.sqrt(dx * dx + dy * dy);
 
                 if (distance < 150) {
+                    const color = getParticleColor();
                     ctx.beginPath();
-                    ctx.strokeStyle = `rgba(59, 130, 246, ${0.15 * (1 - distance / 150)})`;
+                    ctx.strokeStyle = `rgba(${color}, ${0.15 * (1 - distance / 150)})`;
                     ctx.lineWidth = 1;
                     ctx.moveTo(particle.x, particle.y);
                     ctx.lineTo(otherParticle.x, otherParticle.y);
