@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Denys Shtoma - Python Backend Developer Portfolio">
+    <meta name="author" content="Denys Shtoma">
+    <title>Denys Shtoma | Python Backend Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div id="particles-canvas"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                DS
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="theme-toggle" id="themeToggle">
+                <i class="bi bi-moon-stars-fill"></i>
+            </div>
+
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-greeting">Hi there, I'm</span>
+                <h1 class="hero-name">
+                    Denys Shtoma
+                    <span class="wave">👋</span>
+                </h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-static">I'm a</span>
+                    <div class="hero-title-animated">
+                        <span>Python Developer</span>
+                        <span>Backend Engineer</span>
+                        <span>API Architect</span>
+                        <span>Problem Solver</span>
+                    </div>
+                </div>
+                <p class="hero-description">
+                    Crafting scalable backend solutions with Django, FastAPI & modern Python.
+                    Passionate about clean code, robust APIs, and innovative architectures.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="bi bi-chat-dots"></i>
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/Shtomuch" target="_blank" class="social-link" title="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/denys-shtoma" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://t.me/shtomuch" target="_blank" class="social-link" title="Telegram">
+                        <i class="bi bi-telegram"></i>
+                    </a>
+                    <a href="mailto:denusshtoma123@gmail.com" class="social-link" title="Email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="floating-code">
+                        <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-function">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Denys"</span>
+        <span class="code-param">self</span>.role = <span class="code-string">"Backend"</span>
+        <span class="code-param">self</span>.languages = [
+            <span class="code-string">"Python"</span>,
+            <span class="code-string">"JavaScript"</span>
+        ]
+
+    <span class="code-keyword">def</span> <span class="code-function">build_awesome</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"✨ Magic"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">
+                <i class="bi bi-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Hey! I'm Denys, a <strong>Python Backend Developer</strong> from Kyiv, Ukraine.
+                        I build robust, scalable web applications and APIs that power modern digital experiences.
+                    </p>
+
+                    <p>
+                        Currently working at <strong>Viso</strong> as a Python Developer and freelancing with
+                        <strong>Antigravity Projects</strong>. My expertise spans Django, FastAPI, PostgreSQL,
+                        Redis, Docker, and the entire Python ecosystem.
+                    </p>
+
+                    <p>
+                        I'm passionate about clean architecture, API design, database optimization, and building
+                        systems that scale. When not coding, I'm exploring new technologies, contributing to
+                        open-source, or mentoring junior developers.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="https://drive.google.com/file/d/1MRbc7ajjky8iWjtUAnXHkmWty2Hr6xYg/view" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-image">
+                                <img src="https://avatars.githubusercontent.com/u/yourusername" alt="Denys Shtoma">
+                            </div>
+                            <div class="status-badge">
+                                <span class="status-dot"></span>
+                                Available for work
+                            </div>
+                        </div>
+
+                        <div class="profile-info">
+                            <div class="info-item">
+                                <i class="bi bi-geo-alt"></i>
+                                <span>Kyiv, Ukraine</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="bi bi-briefcase"></i>
+                                <span>Python Developer @ Viso</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="bi bi-mortarboard"></i>
+                                <span>KNU Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep 2025 - Present</div>
+                        <h3 class="timeline-title">Python Developer</h3>
+                        <h4 class="timeline-company">Viso</h4>
+                        <p class="timeline-description">
+                            Full-time remote position developing backend services and APIs. Working with Django,
+                            PostgreSQL, Redis, and modern Python stack.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dec 2024 - Sep 2025</div>
+                        <h3 class="timeline-title">Junior Python Developer</h3>
+                        <h4 class="timeline-company">Antigravity Projects</h4>
+                        <p class="timeline-description">
+                            Built and maintained backend features using Django, FastAPI, and DRF. Designed REST APIs,
+                            optimized PostgreSQL schemas, integrated Elasticsearch, and set up CI/CD pipelines.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">DRF</span>
+                            <span class="tag">Elasticsearch</span>
+                            <span class="tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2023 - Sep 2023</div>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <h4 class="timeline-company">Glowart</h4>
+                        <p class="timeline-description">
+                            Freelance remote work from Poland. Implemented UI components with JavaScript and CSS,
+                            integrated REST endpoints, improved responsiveness and accessibility.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2022 - Oct 2023</div>
+                        <h3 class="timeline-title">Fullstack Developer</h3>
+                        <h4 class="timeline-company">Glowart</h4>
+                        <p class="timeline-description">
+                            Built custom light signage website with HTML, CSS, PHP. Solved UX and business visibility
+                            issues via web redesign and optimization.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I've Built</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" alt="JobPilot Bot">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Project">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">OpenAI</span>
+                        </div>
+                        <h3 class="project-title">JobPilot Bot Backend</h3>
+                        <p class="project-description">
+                            Telegram bot + web platform for automated job matching. AI-powered CV parsing,
+                            vacancy recommendations, recruiter dashboards, and LLM chat integration.
+                        </p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                            <span>Celery</span>
+                            <span>Aiogram</span>
+                            <span>OpenAI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600" alt="Pretor AI">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Project">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Neo4j</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <h3 class="project-title">Pretor AI Backend</h3>
+                        <p class="project-description">
+                            AI legal assistant with Telegram bot interface, real-time chat via WebSockets,
+                            vector search with Qdrant, multilingual support, and payment integration.
+                        </p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                            <span>Elasticsearch</span>
+                            <span>Neo4j</span>
+                            <span>Qdrant</span>
+                            <span>OpenAI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600" alt="Personal Assistant">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Project">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <h3 class="project-title">Personal Assistant</h3>
+                        <p class="project-description">
+                            Web app and Telegram bot for managing notes, contacts, files, and news feeds.
+                            Dockerized deployment with PostgreSQL backend.
+                        </p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                            <span>Docker Compose</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Broadcast">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Project">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Jitsi</span>
+                            <span class="tag">WebRTC</span>
+                        </div>
+                        <h3 class="project-title">Broadcast</h3>
+                        <p class="project-description">
+                            Secure video meeting application with topic rooms, authentication, and room management.
+                            Integrated with Jitsi Meet for real-time communication.
+                        </p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>Jitsi Meet</span>
+                            <span>WebRTC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/Shtomuch" target="_blank" class="btn btn-primary">
+                    <i class="bi bi-github"></i>
+                    <span>View All Projects on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical Arsenal</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Django / DRF</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">FastAPI</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Flask</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="bi bi-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Redis</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Elasticsearch</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="bi bi-gear"></i>
+                        <h3>DevOps & Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CI/CD</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Linux</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="bi bi-palette"></i>
+                        <h3>Frontend & Others</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">REST APIs</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">WebSockets</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h3 class="tech-stack-title">Technologies I Work With</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">Celery</span>
+                    <span class="tech-tag">RabbitMQ</span>
+                    <span class="tech-tag">Elasticsearch</span>
+                    <span class="tech-tag">Neo4j</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">SQLAlchemy</span>
+                    <span class="tech-tag">Pytest</span>
+                    <span class="tech-tag">CI/CD</span>
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">Nginx</span>
+                    <span class="tech-tag">OpenAI</span>
+                    <span class="tech-tag">WebSockets</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Have a project in mind?</h3>
+                    <p>
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part
+                        of your vision. Feel free to reach out!
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:denusshtoma123@gmail.com" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">denusshtoma123@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://t.me/shtomuch" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="bi bi-telegram"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Telegram</span>
+                                <span class="contact-value">@shtomuch</span>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/denys-shtoma" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">Denys Shtoma</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Kyiv, Ukraine</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="bi bi-send"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        Denys Shtoma
+                        <span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p class="footer-tagline">Building the future, one API at a time.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://github.com/Shtomuch" target="_blank">GitHub</a></li>
+                            <li><a href="https://linkedin.com/in/denys-shtoma" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://t.me/shtomuch" target="_blank">Telegram</a></li>
+                            <li><a href="mailto:denusshtoma123@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Denys Shtoma. Crafted with passion and Python.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Shtomuch" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://linkedin.com/in/denys-shtoma" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://t.me/shtomuch" target="_blank"><i class="bi bi-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
