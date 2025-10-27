@@ -169,45 +169,44 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('themeToggle');
     const html = document.documentElement;
 
-    if (!themeToggle) {
-        console.error('Theme toggle button not found!');
-        return;
-    }
-
-    function setTheme(theme) {
-        html.setAttribute('data-theme', theme);
-        document.body.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-        updateThemeIcon(theme);
-        console.log('Theme changed to:', theme);
-    }
-
-    function updateThemeIcon(theme) {
-        const icon = themeToggle.querySelector('i');
-        if (!icon) return;
-
-        if (theme === 'dark') {
-            icon.className = 'bi bi-moon-stars-fill';
-        } else {
-            icon.className = 'bi bi-sun-fill';
+    if (themeToggle) {
+        function setTheme(theme) {
+            html.setAttribute('data-theme', theme);
+            document.body.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            updateThemeIcon(theme);
+            console.log('Theme changed to:', theme);
         }
+
+        function updateThemeIcon(theme) {
+            const icon = themeToggle.querySelector('i');
+            if (!icon) return;
+
+            if (theme === 'dark') {
+                icon.className = 'bi bi-moon-stars-fill';
+            } else {
+                icon.className = 'bi bi-sun-fill';
+            }
+        }
+
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        setTheme(savedTheme);
+
+        themeToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const currentTheme = html.getAttribute('data-theme') || 'dark';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            console.log('Switching theme from', currentTheme, 'to', newTheme);
+            setTheme(newTheme);
+        });
+
+        console.log('Theme toggle initialized successfully');
+    } else {
+        console.error('Theme toggle button not found!');
     }
-
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    setTheme(savedTheme);
-
-    themeToggle.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const currentTheme = html.getAttribute('data-theme') || 'dark';
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-        console.log('Switching theme from', currentTheme, 'to', newTheme);
-        setTheme(newTheme);
-    });
-
-    console.log('Theme toggle initialized successfully');
 
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navLinksContainer = document.querySelector('.nav-links');
