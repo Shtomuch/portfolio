@@ -34,9 +34,9 @@ html[data-theme="light"] {
     --bg-secondary: #F1F5F9;
     --bg-tertiary: #E2E8F0;
 
-    --text-primary: #1E293B;
-    --text-secondary: #475569;
-    --text-muted: #64748B;
+    --text-primary: #0F172A;
+    --text-secondary: #1E293B;
+    --text-muted: #475569;
 
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
@@ -146,6 +146,36 @@ html[data-theme="light"] .nav-link.active {
 html[data-theme="light"] .footer {
     background: var(--bg-secondary);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme="light"] *,
+html[data-theme="light"] p,
+html[data-theme="light"] span,
+html[data-theme="light"] div,
+html[data-theme="light"] a,
+html[data-theme="light"] li {
+    color: inherit;
+}
+
+html[data-theme="light"] .hero-title-static,
+html[data-theme="light"] .hero-title-animated,
+html[data-theme="light"] .timeline-company,
+html[data-theme="light"] .skill-name,
+html[data-theme="light"] .stat-label,
+html[data-theme="light"] .info-item span,
+html[data-theme="light"] .contact-label,
+html[data-theme="light"] .contact-value,
+html[data-theme="light"] .footer-tagline {
+    color: var(--text-secondary) !important;
+}
+
+html[data-theme="light"] .logo,
+html[data-theme="light"] .hero-greeting {
+    color: var(--primary) !important;
+}
+
+html[data-theme="light"] .theme-toggle i {
+    color: var(--text-primary);
 }
 
 section,
