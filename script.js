@@ -394,21 +394,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    gsap.from('.stat-number', {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    statNumbers.forEach(stat => {
+        const originalValue = parseInt(stat.textContent.replace('+', ''));
+        stat.setAttribute('data-target', originalValue);
+        stat.textContent = '0+';
+    });
+
+    gsap.to('.stat-number', {
         scrollTrigger: {
             trigger: '.about-stats',
             start: 'top 80%',
             toggleActions: 'play none none none'
         },
-        textContent: 0,
         duration: 2,
         ease: 'power1.inOut',
-        snap: { textContent: 1 },
         stagger: 0.2,
         onUpdate: function() {
-            this.targets().forEach(target => {
-                const val = Math.ceil(target.textContent);
-                target.textContent = val + '+';
+            this.targets().forEach((target, index) => {
+                const finalValue = parseInt(target.getAttribute('data-target'));
+                const progress = this.progress();
+                const currentValue = Math.ceil(finalValue * progress);
+                target.textContent = currentValue + '+';
             });
         }
     });
